@@ -91,7 +91,7 @@ const Hero = () => {
           variants={socialVariants}
         >
           <motion.a
-            href="#"
+            href="https://github.com/dev-koushal"
             className="w-14 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -100,7 +100,7 @@ const Hero = () => {
           </motion.a>
           
           <motion.a
-            href="#"
+            href="www.linkedin.com/in/koushal-yadav"
             className="w-14 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -109,7 +109,7 @@ const Hero = () => {
           </motion.a>
           
           <motion.a
-            href="#"
+            href="https://x.com/Koushal1199"
             className="w-14 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -118,7 +118,7 @@ const Hero = () => {
           </motion.a>
           
           <motion.a
-            href="#"
+            href="https://mail.google.com/mail/?view=cm&to=dev.koushalyadav@gmail.com"
             className="w-14 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

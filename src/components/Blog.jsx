@@ -1,8 +1,19 @@
 import React from 'react';
 import { delay, motion } from 'framer-motion';
 import { ArrowRight, Edit3 } from 'lucide-react';
+import FirstBlogImg from '../assets/reactBlog.png';
+import SecondBlogImg from '../assets/backendBlog.jpg';
+import { useNavigate } from 'react-router';
+import BlogPage from '../Pages/BlogPage';
 
 const Blog = () => {
+   
+  const navigate = useNavigate();
+  
+ const handlenavigate = ()=>{
+  navigate('koushal/blogs');
+ }
+
   const containerVariants = {
     hidden: { opacity: 0,y:100 },
     visible: {
@@ -40,6 +51,7 @@ const Blog = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
+        
       >
         {/* Blog Badge */}
        <motion.div variants={itemVariants} className='inline-block mb-16 rounded-full p-2 border-2 border-emerald-400 px-4 hover:px-6 cursor-pointer transition-all ease-in-out duration-150  '>
@@ -54,7 +66,7 @@ const Blog = () => {
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between mb-12 gap-8 tracking-wider">
           <div className="flex-1">
             <motion.h1 
-              className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6"
               variants={itemVariants}
             >
               Learning, Building, and
@@ -78,7 +90,7 @@ const Blog = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-sm text-white">View all articles</span>
+            <span className="text-sm text-white" onClick={handlenavigate}>View all articles</span>
             <ArrowRight className="w-4 h-4" />
           </motion.button>
         </div>
@@ -94,21 +106,18 @@ const Blog = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
             whileHover="hover"
+            onClick={handlenavigate }
           >
             <motion.div 
               className="w-full md:w-80 h-48 md:h-40 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-lg flex-shrink-0 relative overflow-hidden"
               variants={hoverVariants}
             >
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 border-4 border-white rounded-lg flex items-center justify-center">
-                  <ArrowRight className="w-8 h-8 text-white transform rotate-45" />
-                </div>
-              </div>
+             <img src={FirstBlogImg} alt="React overcome" />
             </motion.div>
             
             <div className="flex-1 space-y-4">
               <div className="flex items-center gap-4 text-sm text-gray-400">
-                <span>December 15, 2024</span>
+                <span>August 15, 2025</span>
                 <span>•</span>
                 <span>5 min read</span>
               </div>
@@ -117,11 +126,11 @@ const Blog = () => {
                 className="text-xl md:text-2xl font-semibold group-hover:text-emerald-400 transition-colors duration-200"
                 variants={itemVariants}
               >
-                Hacky Way to Customize Shadcn's Tooltip Arrows
+                My Rollercoaster with ReactJS <br />(a.k.a. How I Stopped Fighting JSX)
               </motion.h2>
               
               <p className="text-gray-400 leading-relaxed">
-                A workaround for displaying a custom SVG arrow in shadcn's tooltip.
+                When I first opened a React tutorial, my brain said:“Bro… HTML ke beech mein curly braces? Is this even legal?”
               </p>
               
               <div className="flex items-center justify-between">
@@ -129,7 +138,7 @@ const Blog = () => {
                   className="text-emerald-400 flex items-center gap-2 hover:gap-3 transition-all duration-200"
                   whileHover={{ x: 5 }}
                 >
-                  <span>Read more</span>
+                  <span >Read more</span>
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
                 
@@ -150,21 +159,22 @@ const Blog = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
             whileHover="hover"
+            onClick={handlenavigate }
           >
             <motion.div 
               className="w-full md:w-80 h-48 md:h-40 rounded-lg flex-shrink-0 relative overflow-hidden"
               variants={hoverVariants}
             >
               <img 
-                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='320' height='160' viewBox='0 0 320 160'%3E%3Cdefs%3E%3ClinearGradient id='sky' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%2387CEEB'/%3E%3Cstop offset='100%25' style='stop-color:%23E0F6FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100%25' height='100%25' fill='url(%23sky)'/%3E%3Cpolygon points='50,80 80,60 110,70 140,50 170,60 200,40 230,50 260,30 290,40 320,20 320,160 0,160' fill='%23B0E0E6' opacity='0.7'/%3E%3Cpolygon points='0,100 40,90 80,100 120,85 160,95 200,80 240,90 280,75 320,85 320,160 0,160' fill='%2398D8E8' opacity='0.8'/%3E%3Cpath d='M100,70 L130,65 L160,70 L190,60 L220,65' stroke='%23228B22' stroke-width='3' fill='none'/%3E%3Cellipse cx='160' cy='90' rx='15' ry='8' fill='%23006400'/%3E%3C/svg%3E" 
-                alt="Seaplane illustration"
+                src={SecondBlogImg} 
+                alt="Backend Nightmare"
                 className="w-full h-full object-cover"
               />
             </motion.div>
             
             <div className="flex-1 space-y-4">
               <div className="flex items-center gap-4 text-sm text-gray-400">
-                <span>December 12, 2024</span>
+                <span>August 12, 2025</span>
                 <span>•</span>
                 <span>3 min read</span>
               </div>
@@ -173,11 +183,11 @@ const Blog = () => {
                 className="text-xl md:text-2xl font-semibold group-hover:text-emerald-400 transition-colors duration-200"
                 variants={itemVariants}
               >
-                Setting Dynamic Default Values with Zod Schema
+                Why I Stopped Thinking of Backend as “Just APIs”
               </motion.h2>
               
               <p className="text-gray-400 leading-relaxed">
-                Leverage Zod's powerful features to set dynamic default values and enhance data validation with flexibility and ease.
+                How my thinking approach changed from creating and thinking only CRUD to sliding into Systems...
               </p>
               
               <div className="flex items-center justify-between">
@@ -185,18 +195,19 @@ const Blog = () => {
                   className="text-emerald-400 flex items-center gap-2 hover:gap-3 transition-all duration-200"
                   whileHover={{ x: 5 }}
                 >
-                  <span>Read more</span>
+                  <span onClick={handlenavigate }>Read more</span>
                   <ArrowRight className="w-4 h-4" />
                 </motion.button>
                 
                 <div className="flex gap-2">
-                  <span className="bg-gray-800 px-3 py-1 rounded-full text-xs">zod</span>
-                  <span className="bg-gray-800 px-3 py-1 rounded-full text-xs">typescript</span>
+                  <span className="bg-gray-800 px-3 py-1 rounded-full text-xs">nodeJS</span>
+                  <span className="bg-gray-800 px-3 py-1 rounded-full text-xs">Database</span>
                 </div>
               </div>
             </div>
           </motion.article>
           <hr />
+        
         </div>
       </motion.div>
     </div>

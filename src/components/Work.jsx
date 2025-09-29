@@ -29,7 +29,7 @@ const Work = () => {
       
 
       {/* Main Content */}
-      <motion.div  className="px-4 sm:px-8 py-12" >
+      <motion.div  className="px-4 sm:px-8 py-12" viewport={{once:true}} >
         <div>
         <motion.div variants={itemVariants}  initial="hidden"
         whileInView="visible" className="flex md:flex-row items-start md:items-center justify-between  py-6 gap-8 mb-10">
@@ -73,17 +73,18 @@ const Work = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{once:true}}
           >
-            <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-3xl p-4 sm:p-8 mb-6 h-50 sm:h-70 flex items-center justify-center overflow-hidden relative">
+            <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60 w-[80] flex items-center justify-center overflow-hidden relative">
               
             </div>
 
-            <div className="text-gray-400 text-sm mb-2">2024</div>
+            <div className="text-gray-400 text-sm mb-2">2025</div>
             <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
-              Bookmarked Android: A Simple Viewer for My Bookmarked Content
+              Alumni Mangament : Mangage alumni Network and build connections effectively.
             </h2>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-              Built with Jetpack Compose, it aims to offer an improved reading experience on my laggy phone.
+              Built for connecting student to alumni directly without third party socials and distractions.
             </p>
 
             <motion.button
@@ -101,20 +102,21 @@ const Work = () => {
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{once:true}}
           >
-            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-4 sm:p-8 mb-6 h-50 sm:h-70  flex items-center justify-center overflow-hidden relative">
+            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
               <div className="transform scale-75 sm:scale-100">
 
 
               </div>
             </div>
 
-            <div className="text-gray-400 text-sm mb-2">2024</div>
+            <div className="text-gray-400 text-sm mb-2">2025</div>
             <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight ">
-              Bookmarked: Your Go-To Tool for Curating Tweets in Notion
+              ClassConnect : Connect to classes even with low network and laggy phone
             </h2>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-              A full-stack application that enables users to save tweets to Notion via Telegram bot.
+              A full-stack application that enables students to join in online Classrooms from rural areas. 
             </p>
 
             <motion.button
