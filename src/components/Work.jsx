@@ -3,15 +3,36 @@ import { motion } from 'framer-motion';
 import { ArrowRight, FolderOpen } from 'lucide-react';
 
 const Work = () => {
+  const containerVariants = {
+    hidden: { opacity: 0,y:100 },
+    visible: {
+        y:0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        staggerChildren: 0.2
+      }
+    }
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 100 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4 }
+    }
+  };
+
   return (
-    <div id='work' className="min-h-screen w-[90%] md:w-[70%] md:flex mx-auto justify-center text-gray-200 ">
+    <div id='work' className="min-h-screen w-[90%] md:w-[70%] md:flex mx-auto justify-center text-gray-300 ">
       {/* Header */}
       
 
       {/* Main Content */}
-      <div className="px-4 sm:px-8 py-12">
+      <motion.div  className="px-4 sm:px-8 py-12" >
         <div>
-        <motion.div initial={{opacity:0,scale:0.9}} whileInView={{opacity:1,scale:1}} transition={{duration:1}} className="flex md:flex-row items-start md:items-center justify-between  py-6 gap-8 mb-10">
+        <motion.div variants={itemVariants}  initial="hidden"
+        whileInView="visible" className="flex md:flex-row items-start md:items-center justify-between  py-6 gap-8 mb-10">
         <div className="flex items-center gap-2 text-emerald-400 border-2 border-emerald-400 px-4 py-2 rounded-full">
           <FolderOpen size={20} />
           <span className="font-medium">Projects</span>
@@ -19,6 +40,7 @@ const Work = () => {
 
         <motion.button
           className="btn btn-outline btn-sm text-white hover:bg-white hover:text-black border-2 border-emerald-400 px-4 py-5 rounded-full flex items-center gap-2"
+         
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
@@ -44,7 +66,7 @@ const Work = () => {
         </motion.div>
 
         {/* Project Cards */}
-        <div className="flex flex-col md:flex-row gap-8 max-w-full md:max-w-6xl">
+        <div className="flex flex-col md:flex-row gap-8 max-w-full md:max-w-6xl mb-12">
           {/* Project 1 - Mobile App */}
           <motion.div
             className="flex-1"
@@ -88,7 +110,7 @@ const Work = () => {
             </div>
 
             <div className="text-gray-400 text-sm mb-2">2024</div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
+            <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight ">
               Bookmarked: Your Go-To Tool for Curating Tweets in Notion
             </h2>
             <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
@@ -104,7 +126,8 @@ const Work = () => {
             </motion.button>
           </motion.div>
         </div>
-      </div>
+     <hr />
+      </motion.div>
     </div>
   );
 };
