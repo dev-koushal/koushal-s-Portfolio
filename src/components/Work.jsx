@@ -12,7 +12,8 @@ const Work = () => {
         duration: 0.5,
         staggerChildren: 0.2
       }
-    }
+    },
+     viewport: {once:true}
   };
   const itemVariants = {
     hidden: { opacity: 0, y: 100 },
@@ -20,7 +21,8 @@ const Work = () => {
       opacity: 1,
       y: 0,
       transition: { duration: 0.4 }
-    }
+    },
+     viewport: {once:true}
   };
 
   return (
@@ -31,7 +33,7 @@ const Work = () => {
       {/* Main Content */}
       <motion.div  className="px-4 sm:px-8 py-12" viewport={{once:true}} >
         <div>
-        <motion.div variants={itemVariants}  initial="hidden"
+        <motion.div variants={itemVariants} viewport={{once: true}}  initial="hidden"
         whileInView="visible" className="flex md:flex-row items-start md:items-center justify-between  py-6 gap-8 mb-10">
         <div className="flex items-center gap-2 text-emerald-400 border-2 border-emerald-400 px-4 py-2 rounded-full">
           <FolderOpen size={20} />
@@ -44,7 +46,7 @@ const Work = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          View all projects
+         <a href="https://github.com/dev-koushal"> View all projects</a>
           <ArrowRight size={16} />
         </motion.button>
       </motion.div>
@@ -53,6 +55,7 @@ const Work = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
+          viewport={{once: true}}
         >
           <h1 className="text-4xl sm:text-4xl md:text-5xl font-semibold leading-tight tracking-wider  mb-8 max-w-full md:max-w-2xl">
             Milestones in the<br />

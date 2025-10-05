@@ -2,7 +2,7 @@ import React from 'react';
 import { delay, motion } from 'framer-motion';
 import { ArrowRight, Edit3 } from 'lucide-react';
 import FirstBlogImg from '../assets/reactBlog.png';
-import SecondBlogImg from '../assets/backendBlog.jpg';
+import SecondBlogImg from '../assets/backendImge.png';
 import { useNavigate } from 'react-router';
 import BlogPage from '../Pages/BlogPage';
 
@@ -32,7 +32,8 @@ const Blog = () => {
       opacity: 1,
       y: 0,
       transition: { duration: 0.6, }
-    }
+    },
+    viewport: {once:true}
   };
 
   const hoverVariants = {
@@ -51,10 +52,10 @@ const Blog = () => {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        
+        viewport={{once:true}}
       >
         {/* Blog Badge */}
-       <motion.div variants={itemVariants} className='inline-block mb-16 rounded-full p-2 border-2 border-emerald-400 px-4 hover:px-6 cursor-pointer transition-all ease-in-out duration-150  '>
+       <motion.div variants={itemVariants} viewport={{once:true}} className='inline-block mb-16 rounded-full p-2 border-2 border-emerald-400 px-4 hover:px-6 cursor-pointer transition-all ease-in-out duration-150  '>
          <div 
           className="flex items-center gap-2  ">
           <Edit3 className="w-4 h-4 text-emerald-400 " />
@@ -68,6 +69,7 @@ const Blog = () => {
             <motion.h1 
               className="text-3xl md:text-4xl lg:text-5xl font-semibold leading-tight mb-6"
               variants={itemVariants}
+              
             >
               Learning, Building, and
               <br />
@@ -84,13 +86,13 @@ const Blog = () => {
             </motion.p>
           </div>
 
-          <motion.button
+          <motion.button onClick={handlenavigate}
             className="border border-white rounded-full px-6 py-3 flex items-center gap-2 hover:border-white/40 transition-colors duration-150 cursor-pointer self-start lg:self-end "
             variants={itemVariants}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <span className="text-sm text-white" onClick={handlenavigate}>View all articles</span>
+            <span className="text-sm text-white"  >View all articles</span>
             <ArrowRight className="w-4 h-4" />
           </motion.button>
         </div>
@@ -107,6 +109,7 @@ const Blog = () => {
           transition={{ duration: 0.8 }}
             whileHover="hover"
             onClick={handlenavigate }
+            viewport={{once: true}}
           >
             <motion.div 
               className="w-full md:w-80 h-48 md:h-40 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-lg flex-shrink-0 relative overflow-hidden"
@@ -159,6 +162,7 @@ const Blog = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
             whileHover="hover"
+            viewport={{once: true}}
             onClick={handlenavigate }
           >
             <motion.div 
