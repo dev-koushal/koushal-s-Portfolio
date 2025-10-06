@@ -79,10 +79,12 @@ const Work = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{once:true}}
           >
-            <div className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60 w-[80] flex items-center justify-center overflow-hidden relative">
-             <img src={AlumniSoftware} className='rounded-2xl' alt="" />
-            </div>
+            <div  className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
+              <img className='rounded-2xl' src={AlumniSoftware} alt="" />
+              <div className="transform scale-75 sm:scale-100">
 
+              </div>
+            </div>
             <div className="text-gray-400 text-sm mb-2">2025</div>
             <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
               Alumni Mangament : Mangage alumni Network and build connections effectively.
