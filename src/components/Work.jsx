@@ -1,7 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, FolderOpen } from 'lucide-react';
-
+import AlumniSoftware from '../assets/AlumniSofttware.png'
+import ClassConnect from '../assets/ClassConnect.png'
 const Work = () => {
   const containerVariants = {
     hidden: { opacity: 0,y:100 },
@@ -78,8 +79,8 @@ const Work = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{once:true}}
           >
-            <div className="bg-gradient-to-br from-cyan-400 to-blue-500 rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60 w-[80] flex items-center justify-center overflow-hidden relative">
-              
+            <div className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60 w-[80] flex items-center justify-center overflow-hidden relative">
+             <img src={AlumniSoftware} className='rounded-2xl' alt="" />
             </div>
 
             <div className="text-gray-400 text-sm mb-2">2025</div>
@@ -107,9 +108,9 @@ const Work = () => {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{once:true}}
           >
-            <div className="bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
+            <div  className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
+              <img className='rounded-2xl' src={ClassConnect} alt="" />
               <div className="transform scale-75 sm:scale-100">
-
 
               </div>
             </div>

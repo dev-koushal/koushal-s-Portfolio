@@ -30,6 +30,34 @@ function BlogPage() {
             alt="React journey "
           />
         </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
         <div className="card-body ">
           <h2 className="card-title">From writing code direct in laptop to grabbing pen & paper</h2>
           <p>
@@ -46,3 +74,5 @@ function BlogPage() {
 }
 
 export default BlogPage;
+
+
