@@ -203,7 +203,7 @@ function About() {
               </div>
               <div className='space-y-2'>
                 <div className='text-white font-semibold'>System Design</div>
-                <div className='text-white font-semibold'>Leacking up Backend</div>
+                <div className='text-white font-semibold'>"Licking up Backend</div>
                 <div className='text-white font-semibold'>Social Interactions</div>
               </div>
             </div>
@@ -327,7 +327,7 @@ function About() {
           </div>
           <div className='rounded-3xl bg-gradient-to-br from-slate-800/90 to-slate-900/90 p-4 border border-slate-700/50 shadow-xl'>
             <Keyboard className='w-5 h-5 text-emerald-400 mb-2' />
-            <div className='text-white font-bold'>70 WPM</div>
+            <div className='text-white font-bold'>65+ WPM</div>
             <div className='text-xs text-slate-400'>Typing Speed</div>
           </div>
         </div>
