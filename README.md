@@ -1,17 +1,37 @@
-# React + Vite
+Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive personal portfolio that highlights my projects, skills, and journey as a developer. Designed for clarity, smooth interaction, and a strong first impression.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Clean, modern, and responsive design
 
-## React Compiler
+Smooth animations and interactive elements
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project showcase with descriptions and links
 
-## Expanding the ESLint configuration
+Contact section for easy communication
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# koushal-s-Portfolio
+Optimized for performance and accessibility
+
+🎯 Purpose
+
+This portfolio serves as a professional showcase of my skills, projects, and achievements, helping potential employers or collaborators understand my work and capabilities.
+
+📝 Sections
+
+About Me – Short bio and background
+
+Projects – Highlighted projects with descriptions and links
+
+Skills – Overview of technical and professional skills
+
+Contact – Contact form and social links
+
+🌟 Contribution
+
+This is a personal project. Contributions are not required but feedback is welcome.
+
+📩 Contact
+
+You can reach me at: dev.koushalyadav@gmail.com
