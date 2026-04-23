@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, FileText, Mail, Twitter } from 'lucide-react';
+import { Github, Linkedin, FileText, Mail, Twitter, DownloadIcon } from 'lucide-react';
 
 const Hero = () => {
   const containerVariants = {
@@ -87,7 +87,7 @@ const Hero = () => {
 
         {/* Social Links */}
         <motion.div 
-          className="flex items-center gap-4"
+          className="flex items-center gap-1 md:gap-4"
           variants={socialVariants}
         >
           <motion.a
@@ -128,6 +128,15 @@ const Hero = () => {
           >
             <Mail size={20} />
           </motion.a>
+          <motion.a
+            href="https://spring-bird-854.linkyhost.com"
+            target='_blank'
+            className="w-fit px-2 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Resume <DownloadIcon className='ml-2'/>
+          </motion.a> 
           
           
         </motion.div>
