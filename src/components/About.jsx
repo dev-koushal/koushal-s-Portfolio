@@ -70,13 +70,13 @@ function About() {
               <div className='grid grid-cols-3 gap-4'>
                 <div className='p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50 hover:scale-105 hover:border-emerald-400/40 transition-all'>
                   <Code2 className='w-6 h-6 text-emerald-400 mb-2' />
-                  <div className='text-2xl font-bold text-white'>500+</div>
-                  <div className='text-sm text-slate-400'>DSA Problems</div>
+                  <div className='text-2xl font-bold text-white'>1600+</div>
+                  <div className='text-sm text-slate-400'>Leet Code Ranking</div>
                 </div>
 
                 <div className='p-4 bg-slate-800/50 rounded-2xl border border-slate-700/50 hover:scale-105 hover:border-emerald-400/40 transition-all'>
                   <Trophy className='w-6 h-6 text-emerald-400 mb-2' />
-                  <div className='text-2xl font-bold text-white'>5+</div>
+                  <div className='text-2xl font-bold text-white'>10+</div>
                   <div className='text-sm text-slate-400'>Projects</div>
                 </div>
 
