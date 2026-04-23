@@ -42,12 +42,12 @@ const Work = () => {
         </div>
 
         <motion.button
-          className="btn btn-outline btn-sm text-white hover:bg-white hover:text-black border-2 border-emerald-400 px-4 py-5 rounded-full flex items-center gap-2"
+          className="btn btn-outline btn-sm text-white hover:bg-gray-300 hover:text-black border-2 border-emerald-400 px-4 py-5 rounded-full flex items-center gap-2"
          
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-         <a href="https://github.com/dev-koushal"> View all projects</a>
+         <a href="https://github.com/dev-koushal" target='_blank'> View all projects</a>
           <ArrowRight size={16} />
         </motion.button>
       </motion.div>
@@ -80,24 +80,25 @@ const Work = () => {
             viewport={{once:true}}
           >
             <div  className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
-              <img className='rounded-2xl' src={AlumniSoftware} alt="" />
+              <img className='rounded-2xl' src="/Vettor.png" alt="" />
               <div className="transform scale-75 sm:scale-100">
 
               </div>
             </div>
-            <div className="text-gray-400 text-sm mb-2">2025</div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
-              Alumni Mangament : Mangage alumni Network and build connections effectively.
-            </h2>
-            <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-              Built for connecting student to alumni directly without third party socials and distractions.
-            </p>
+            <div className="text-gray-400 text-sm mb-2">2026</div>
+<h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
+  Vettor AI : AI-powered mock interview platform with real-time feedback.
+</h2>
+<p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
+  Built a full-stack system enabling real-time video/audio interviews with AI-generated evaluation reports and integrated payment system.
+</p>
 
             <motion.button
               className="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors"
               whileHover={{ x: 5 }}
+
             >
-              Read more
+             <a href="https://vettorai-1.onrender.com" target='_blank'> Try Out</a>
               <ArrowRight size={16} />
             </motion.button>
           </motion.div>
@@ -111,25 +112,25 @@ const Work = () => {
             viewport={{once:true}}
           >
             <div  className="rounded-3xl p-4 sm:p-8 mb-6 h-40 sm:h-60  flex items-center justify-center overflow-hidden relative">
-              <img className='rounded-2xl' src={ClassConnect} alt="" />
+              <img className='rounded-2xl' src="/LMS.png" alt="" />
               <div className="transform scale-75 sm:scale-100">
 
               </div>
             </div>
 
             <div className="text-gray-400 text-sm mb-2">2025</div>
-            <h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight ">
-              ClassConnect : Connect to classes even with low network and laggy phone
-            </h2>
-            <p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
-              A full-stack application that enables students to join in online Classrooms from rural areas. 
-            </p>
+<h2 className="text-xl sm:text-2xl font-semibold mb-4 leading-tight">
+  Skillio : Scalable learning management system for structured course delivery.
+</h2>
+<p className="text-gray-400 mb-6 leading-relaxed text-sm sm:text-base">
+  Developed a full-stack LMS supporting course management, user authentication, and content delivery with focus on performance and usability.
+</p>
 
             <motion.button
               className="flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors"
               whileHover={{ x: 5 }}
             >
-              Read more
+               <a href="https://skillio-1-bb42.onrender.com/" target='_black'>Try Out</a>
               <ArrowRight size={16} />
             </motion.button>
           </motion.div>
