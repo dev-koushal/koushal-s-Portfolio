@@ -23,22 +23,22 @@ function Footer() {
   </aside>
   <nav>
     <h6 className="footer-title">Socials</h6>
-    <a className="link link-hover">Instagram</a>
-    <a className="link link-hover">Twitter</a>
-    <a className="link link-hover">Reddit</a>
-    <a className="link link-hover">Discord</a>
+    <a className="link link-hover" href='https://www.instagram.com/99.koushal?igsh=czkwYmd1ZzJwNDcy' target='_blank'>Instagram</a>
+    <a className="link link-hover" href='https://x.com/Koushal1199' target='_blank'>Twitter</a>
+    <a className="link link-hover" href='https://www.reddit.com/user/New-Salad-6532/' target='_blank'>Reddit</a>
+    <a className="link link-hover" href='' target='_blank'>Discord</a>
   </nav>
   <nav>
     <h6 className="footer-title">Contact</h6>
     <a className="link link-hover">Gmail: dev.koushalyadav@gmail.com</a>
-    <a className="link link-hover">Phone no : 78050xxx</a>
+    <a className="link link-hover">Gmail: koushalydv99@gmail.com</a>
+   
     <a className="link link-hover"></a>
   </nav>
   <nav>
     <h6 className="footer-title">This site</h6>
-    <a className="link link-hover">Analytics</a>
-    <a className="link link-hover">About Me</a>
-    <a className="link link-hover">Source code</a>
+    <a href='#about' className="link link-hover">About Me</a>
+    <a target="_blank" href='https://github.com/dev-koushal/koushal-s-Portfolio' className="link link-hover">Source code</a>
   </nav>
 </footer>
   )

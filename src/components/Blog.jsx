@@ -91,8 +91,9 @@ const Blog = () => {
           <motion.article className="flex flex-col md:flex-row gap-6 group cursor-pointer"
             whileHover="hover" onClick={handlenavigate}>
             
-            <motion.div className="w-full md:w-80 h-40 bg-gradient-to-br from-emerald-600 to-emerald-800 rounded-lg" variants={hoverVariants} />
-
+             <motion.div className="w-full md:w-80 h-40 overflow-hidden rounded-lg" variants={hoverVariants}>
+              <img src="/ledger.png" alt="" />
+            </motion.div>
             <div className="flex-1 space-y-4">
               <div className="text-sm text-gray-400">Feb 20, 2026 </div>
 
@@ -110,7 +111,7 @@ const Blog = () => {
             whileHover="hover" onClick={handlenavigate}>
             
             <motion.div className="w-full md:w-80 h-40 overflow-hidden rounded-lg" variants={hoverVariants}>
-              <img src={SecondBlogImg} alt="" />
+              <img src="/Bun.webp" alt="" />
             </motion.div>
 
             <div className="flex-1 space-y-4">
