@@ -129,7 +129,7 @@ const Hero = () => {
             <Mail size={20} />
           </motion.a>
           <motion.a
-            href="https://drive.google.com/file/d/1Ld88fLeDx9nepL4l8kGeLgutSvlyvqoJ/view?usp=sharing"
+            href="https://drive.google.com/file/d/1TIVZ2G7ocVLPmbn5tgLeyO1A2HeeU8bM/view"
             target='_blank'
             className="w-fit px-2 h-14 bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl flex items-center justify-center text-slate-400 hover:text-white hover:bg-slate-700/50 transition-all duration-300"
             whileHover={{ scale: 1.05 }}
